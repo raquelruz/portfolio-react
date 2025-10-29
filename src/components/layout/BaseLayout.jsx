@@ -1,11 +1,11 @@
-import { Sidebar } from "../Sidebar/Sidebar";
+import { Navbar } from "../Navbar/Navbar";
 
 export const BaseLayout = ({ children }) => {
 	return (
-		<div className="flex bg-bg text-text min-h-screen transition-colors duration-500">
-			<Sidebar />
+		<div className="relative flex flex-col min-h-screen bg-bg text-text transition-colors duration-500">
+			<Navbar />
 
-			<main className="flex-1 w-full md:ml-64 px-6 md:px-12 py-10">{children}</main>
+			<main className="flex-1 w-full px-6 md:px-12 py-20">{children}</main>
 		</div>
 	);
 };

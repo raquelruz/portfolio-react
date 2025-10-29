@@ -1,4 +1,5 @@
 import "./App.css";
+import { Navbar } from "./components/Navbar/Navbar.jsx"
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -10,6 +11,7 @@ import { Skills } from "./components/Skills";
 export const App = () => {
 	return (
 		<BaseLayout>
+		<Navbar />
 			<section id="home" className="min-h-screen flex items-center justify-center">
 				<Hero />
 			</section>
