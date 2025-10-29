@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 * {
 	box-sizing: border-box;
 }
@@ -14,7 +15,7 @@ body {
 
 @theme {
 	--font-landing: "Open Sans", sans-serif;
-	--font-title: "Playfair Display", serif;
+	--font-title: "Bebas Neue", serif;
 
 	--text-h1: 48px;
 	--text-h2: 30px;
@@ -31,24 +32,25 @@ body {
 	--spacing-2xl: 60px;
 	--spacing-3xl: 90px;
 
-	--color-bg: #f9fafb;
-	--color-text: #111827;
-	--color-accent: #14b8a6;
-	--color-accent-hover: #0d9488;
-	--color-secondary: #6466f1;
-	--color-border: #e5e7eb;
-	--color-card: #ffffff;
+	/* 🌞 Light mode */
+--color-bg: #f8faf8;
+--color-text: #111418;
+--color-accent: #00bfa6;
+--color-accent-hover: #00d9b7;
+--color-secondary: #ffb400;
+--color-border: #d6e2de;
+--color-card: #ffffff;
 }
 
-	.dark {
-		--color-bg: #0f172a;
-		--color-text: #f8fafc;
-		--color-accent: #14b8a6;
-		--color-accent-hover: #2dd4bf;
-		--color-secondary: #818cf8;
-		--color-border: #1e293b;
-		--color-card: #1e293b;
-	}
+.dark {
+--color-bg: #0b0f0f;
+--color-text: #f3f8f8;
+--color-accent: #00e5c1;
+--color-accent-hover: #00ffdc;
+--color-secondary: #ffd54f;
+--color-border: #1f2a29;
+--color-card: #141c1b;
+}
 
 h1 {
 	@apply font-bold;
@@ -88,4 +90,8 @@ h6 {
 	font-size: var(--text-h6);
 	line-height: 125%;
 	font-family: var(--font-title);
+}
+
+a {
+	transition: text-shadow 0.3s ease, color 0.3s ease;
 }
