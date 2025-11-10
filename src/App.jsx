@@ -11,7 +11,9 @@ import { Skills } from "./components/Skills";
 export const App = () => {
 	return (
 		<BaseLayout>
+
 		<Navbar />
+		
 			<section id="home" className="min-h-screen flex items-center justify-center">
 				<Hero />
 			</section>

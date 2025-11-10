@@ -17,6 +17,7 @@ export const Navbar = () => {
 			>
 				{/* Desktop */}
 				<div className="hidden md:flex items-center gap-6">
+					
 					<a href="#projects" className="hover:text-accent transition">
 						Proyectos
 					</a>
@@ -40,7 +41,7 @@ export const Navbar = () => {
 
 					<a
 						href="#contact"
-						className="px-4 py-1.5 bg-accent text-bg rounded-full hover:bg-accent hover:shadow-[0_0_10px_rgba(0,255,204,0.4)] transition-all duration-300 shadow-sm"
+						className="px-4 py-1.5 bg-accent text-bg rounded-full transition-all duration-300 shadow-sm"
 					>
 						¡Contáctame!
 					</a>
@@ -49,7 +50,7 @@ export const Navbar = () => {
 				{/* Mobile */}
 				<button
 					onClick={() => setIsOpen(!isOpen)}
-					className="md:hidden flex items-center justify-center w-8 h-8 rounded-full border border-border hover:border-[color:var(--color-accent)] transition"
+					className="md:hidden flex items-center justify-center w-8 h-8 rounded-full border border-border hover:border-accent transition"
 				>
 					<span className="text-lg">{isOpen ? "✕" : "☰"}</span>
 				</button>

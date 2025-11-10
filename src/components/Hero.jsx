@@ -4,7 +4,7 @@ export const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="flex flex-col items-center justify-center min-h-screen text-center bg-bg text-text px-6"
+			className="flex flex-col items-center justify-center text-center bg-bg text-text"
 		>
 			<motion.h1
 				initial={{ opacity: 0, y: 20 }}
