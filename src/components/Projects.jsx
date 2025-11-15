@@ -33,7 +33,7 @@ const projects = [
 
 export const Projects = () => {
 	return (
-		<section id="projects" className="px-6 md:px-20 py-20 bg-bg text-text relative">
+		<section id="projects" className="px-6 md:px-20 bg-bg text-text relative">
 
 			<div className="absolute inset-0 pointer-events-none">
 				<div className="absolute top-20 left-10 w-72 h-72 bg-bg blur-[120px] rounded-full"></div>

@@ -27,7 +27,7 @@ export const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="px-6 md:px-20 py-20 bg-bg text-text transition-colors duration-700"
+			className="px-6 md:px-20 bg-bg text-text transition-colors duration-700"
 		>
 			<motion.div
 				initial={{ opacity: 0, y: 20 }}

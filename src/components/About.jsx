@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 
 export const About = () => {
 	return (
-		<section id="about" className="relative px-6 md:px-20 py-20 bg-bg text-text overflow-hidden">
-			<div className="absolute top-0 right-0 w-[350px] h-[350px] bg-accent/20 blur-[120px] rounded-full"></div>
-			<div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-accent/10 blur-[120px] rounded-full"></div>
+		<section id="about" className="relative px-6 md:px-20 bg-bg text-text overflow-hidden">
 
 			<motion.h1
 				initial={{ opacity: 0, y: 20 }}
