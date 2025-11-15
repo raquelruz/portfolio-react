@@ -36,5 +36,6 @@ export const App = () => {
 
 			<Footer />
 		</BaseLayout>
+		
 	);
 };

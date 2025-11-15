@@ -3,11 +3,11 @@ import ThemeToggle from "../ThemeToggle";
 
 export const BaseLayout = ({ children }) => {
 	return (
-		<div className="relative flex flex-col bg-bg text-text">
+		<div className="relative flex flex-col bg-red text-text border border-border">
 			<Navbar />
 
 			<ThemeToggle />
-			<main className="flex-1 w-full px-6 md:px-12 py-12">{children}</main>
+			<main className="flex-1 w-full">{children}</main>
 		</div>
 	);
 };

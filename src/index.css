@@ -34,6 +34,7 @@ body {
 
 	/* 🌞 Light mode */
 --color-bg: #f8faf8;
+--color-bg-dark: #176d62;
 --color-text: #111418;
 --color-accent: #00bfa6;
 --color-accent-hover: #00d9b7;
@@ -44,6 +45,7 @@ body {
 
 .dark {
 --color-bg: #0b0f0f;
+--color-bg-dark: #176d62;
 --color-text: #f3f8f8;
 --color-accent: #00e5c1;
 --color-accent-hover: #00ffdc;
