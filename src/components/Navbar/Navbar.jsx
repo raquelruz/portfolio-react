@@ -13,10 +13,14 @@ export const Navbar = () => {
 				initial={{ y: -40, opacity: 0 }}
 				animate={{ y: 0, opacity: 1 }}
 				transition={{ duration: 0.8, ease: "easeOut" }}
-				className="fixed top-6 left-1/2 -translate-x-1/2 bg-card/90 backdrop-blur-md border border-border shadow-md px-6 py-2 rounded-full flex items-center gap-6 text-sm font-medium z-50 transition-colors duration-500"
+				className="fixed top-6 left-1/2 -translate-x-1/2 bg-card/90 backdrop-blur-md border border-border shadow-md px-6 py-2 rounded-full flex items-center gap-6 text-sm font-medium font-landing z-50 transition-colors duration-500"
 			>
 				{/* Desktop */}
 				<div className="hidden md:flex items-center gap-6">
+
+					<a href="#about" className="hover:text-accent transition">
+						Sobre mí
+					</a>
 					
 					<a href="#projects" className="hover:text-accent transition">
 						Proyectos
@@ -24,10 +28,6 @@ export const Navbar = () => {
 
 					<a href="#skills" className="hover:text-accent transition">
 						Skills
-					</a>
-
-					<a href="#about" className="hover:text-accent transition">
-						Sobre mí
 					</a>
 
 					<a
