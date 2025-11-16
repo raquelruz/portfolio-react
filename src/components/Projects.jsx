@@ -4,6 +4,7 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 const projects = [
 	{
 		title: "Bookfix — Biblioteca Web",
+		slug: "bookfix",
 		description:
 			"Explora libros mediante la API de Google Books. CRUD, favoritos y gestión completa con LocalStorage.",
 		tech: ["JavaScript", "HTML", "CSS", "API REST"],
@@ -13,6 +14,7 @@ const projects = [
 	},
 	{
 		title: "Woodline Living — E-Commerce",
+		slug: "woodline",
 		description:
 			"E-commerce moderno en React + Tailwind con dashboard, pedidos en tiempo real y animaciones con Framer Motion.",
 		tech: ["React", "Tailwind", "Axios", "Framer Motion"],
@@ -22,6 +24,7 @@ const projects = [
 	},
 	{
 		title: "Réplica de Amazon — E-Commerce",
+		slug: "replicaamazon",
 		description:
 			"Clon funcional de Amazon con buscador, carrito dinámico y filtros avanzados. Desarrollado en JavaScript. (LINK EN NETLIFY TUMBADO)",
 		tech: ["JavaScript", "CSS", "HTML", "Modular JS"],
@@ -34,7 +37,6 @@ const projects = [
 export const Projects = () => {
 	return (
 		<section id="projects" className="px-6 md:px-20 bg-bg text-text relative">
-
 			<div className="absolute inset-0 pointer-events-none">
 				<div className="absolute top-20 left-10 w-72 h-72 bg-bg blur-[120px] rounded-full"></div>
 				<div className="absolute bottom-20 right-10 w-72 h-72 bg-bg blur-[120px] rounded-full"></div>
@@ -60,8 +62,6 @@ export const Projects = () => {
 						viewport={{ once: true }}
 						className="group flex flex-col bg-bg border border-white/10 rounded-3xl overflow-hidden shadow-[0_0_20px_-5px_rgba(0,255,204,0.15)] hover:shadow-[0_0_40px_-5px_rgba(0,255,204,0.3)] transition-all duration-500 backdrop-blur-xl"
 					>
-
-						{/* IMAGEN GRANDE */}
 						<div className="relative h-64 overflow-hidden">
 							<img
 								src={project.image}
@@ -69,13 +69,10 @@ export const Projects = () => {
 								className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
 							/>
 
-							{/* Luz en hover */}
 							<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-all duration-500 bg-gradient-to-tr from-accent via-transparent to-transparent"></div>
 						</div>
 
-						{/* CONTENIDO */}
 						<div className="p-7 flex flex-col flex-1">
-
 							<h3 className="text-xl font-semibold font-title mb-2 group-hover:text-accent transition-colors">
 								{project.title}
 							</h3>
@@ -84,7 +81,6 @@ export const Projects = () => {
 								{project.description}
 							</p>
 
-							{/* TECNOLOGÍAS */}
 							<div className="flex flex-wrap gap-2 mb-6">
 								{project.tech.map((tech, j) => (
 									<span
@@ -113,8 +109,14 @@ export const Projects = () => {
 								>
 									<FiGithub /> Código
 								</a>
-							</div>
 
+								<a
+									href={`/project/${project.slug}`}
+									className="px-4 py-2 text-sm border border-white/10 rounded-full flex items-center gap-2 hover:text-accent transition-all duration-300"
+								>
+									Ver más →
+								</a>
+							</div>
 						</div>
 					</motion.div>
 				))}
